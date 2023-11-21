@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <div class="homebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+           <li><a href="">Accounts</a></li>
+           <li><a href="">Deposits</a></li>
+           <li><a href="">Payments</a></li>
+           <li><a href="">Cards</a></li>
+           <li><a href="">Loans</a></li>
+           <li><a href="">Investments</a></li>
+           <li><a href="">Insurance</a></li>
+           <li><a href="">Special Services</a></li>
+           
+           <li><button><a href="login.html" alt="login">Login</a></button></li>
+        </ul>
+    </div>
+    <div><center>
+        
+    <form class="forms">
+        <center>
+            <div class="logi">
+                <br><br><br>
+                <b class="log">Customer Login</b>
+                <br><br>
+                <label for="customerid">Customer Id:</label>
+                <input required type="text" id="customerid" placeholder="Customer Id">
+
+                <br><br>
+                <!-- <label for="name">Name : </label>
+                <input required type="text" id="name" placeholder="Username">
+                <br><br> -->
+                <label for="password">Password : &nbsp; 
+
+                    
+                </label>
+                <input required type="text" id="password" placeholder="Password">
+                <br><br>
+                <!-- <label for="call">Phone:</label>
+            
+                <input required type="tel" id="call" placeholder="Phone No.">
+                <br><br> -->
+                
+                <!-- <input type="submit" id="submit"> -->
+                <button class="Face"><b>Proceed</b></button>
+                <p>Don't have an account? <br><a style="text-decoration: none; color: rgb(0, 60, 255);" href="register.html" target="_blank">Register</a></p>
+            </div>
+        </center>
+    </form>
+    
+    </div>
+    
+</body>
+</html>
