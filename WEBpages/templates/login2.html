@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+    <link rel="shortcut icon"  href="{{ url_for('static', filename='images/logo.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById('password');
+            // var checkbox = document.getElementById('showPassword');
+
+            // passwordInput.type = checkbox.checked ? 'text' : 'password';
+        }
+    </script>
+    
+</head>
+<body>
+    
+    <div class="homebar">
+        <ul>
+            <li><a href="/index">Home</a></li>
+           <li><a href="">Accounts</a></li>
+           <li><a href="">Deposits</a></li>
+           <li><a href="">Payments</a></li>
+           <li><a href="">Cards</a></li>
+           <li><a href="">Loans</a></li>
+           <li><a href="">Investments</a></li>
+           <li><a href="">Insurance</a></li>
+           <li><a href="">Special Services</a></li>
+           
+           <li><button><a href="/login2" alt="login">Login</a></button></li>
+        </ul>
+    </div>
+    <div>
+        <div class="heading">
+            <h1>
+                ASBC Bank
+            </h1>
+        </div>
+        <center>
+        
+    <form class="forms" action="/login2" method="post">
+        <center>
+            <div class="logi">
+                <br><br><br>
+                <b class="log">Customer Login</b>
+                <br><br>
+                <label for="person_name">Customer Id:</label>
+                <input required type="text" id="persson_name" name="person_name" placeholder="Customer Id">
+
+                <br><br>
+                <!-- <label for="name">Name : </label>
+                <input required type="text" id="name" placeholder="Username">
+                <br><br> -->
+                <label for="password">Password : &nbsp; 
+
+                    
+                </label>
+                <input required type="password" id="password" placeholder="Password">
+                <br><br>
+                <!-- <label for="call">Phone:</label>
+            
+                <input required type="tel" id="call" placeholder="Phone No.">
+                <br><br> -->
+                
+                <!-- <input type="submit" id="submit"> -->
+                <button class="Face"><b>Proceed</b></button>
+                <p>Don't have an account? <br><a style="text-decoration: none; color: rgb(0, 60, 255);" href="/register" target="_blank">Register</a></p>
+            </div>
+        </center>
+    </form>
+    
+    </div>
+    
+</body>
+</html>

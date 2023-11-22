@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Page 2 - My Website</title>
+</head>
+<body>
+
+<header>
+    <h1>My Website</h1>
+    <!-- Include any common navigation or header elements here -->
+</header>
+
+<div id="content">
+    <h2>Welcome to Page 2</h2>
+    <form action="/page2" method="post">
+        <label for="person_name">Person Name:</label>
+        <input type="text" id="person_name" name="person_name" required>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+    
+    <!-- Add the button to direct to page3 -->
+    <a href="/page3"><button>Next</button></a>
+</div>
+
+<footer>
+    <!-- Include any common footer elements here -->
+    <p>&copy; 2023 My Website</p>
+</footer>
+
+</body>
+</html>
